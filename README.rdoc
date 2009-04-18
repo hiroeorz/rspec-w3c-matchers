@@ -8,7 +8,7 @@ RSpecW3CMatchers is rspec's custom spec, that check target is mached w3c valid (
 
 == SYNOPSIS
 
-  require "rspec-w3c-matchers"
+  require "rspec_w3c_matchers"
 
   html_string.should be_valid_html
   or
@@ -19,7 +19,7 @@ RSpecW3CMatchers is rspec's custom spec, that check target is mached w3c valid (
 
   sample:
   require 'net/http'
-  require "rspec-w3c-matchers"
+  require "rspec_w3c_matchers"
   
   Net::HTTP.version_1_2
   Net::HTTP.start("www.example.com", 80) { |http|
@@ -28,7 +28,7 @@ RSpecW3CMatchers is rspec's custom spec, that check target is mached w3c valid (
   }
 
   If you use merb rspec:
-  require "rspec-w3c-matchers" # in spec/spec_helper.rb
+  require "rspec_w3c_matchers" # in spec/spec_helper.rb
   
   in spec/requests/sample_helper.rb:
 
