@@ -32,6 +32,9 @@ Gem::Specification.new do |s|
     "spec/rspec_w3c_matchers_spec.rb"
   ]
 
+  s.add_dependency("rspec", ">=1.2.4")
+  s.add_dependency("w3c_validators", ">=0.9.3")
+
   if s.respond_to? :specification_version then
     current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 2
