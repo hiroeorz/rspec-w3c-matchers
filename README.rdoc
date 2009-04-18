@@ -1,6 +1,7 @@
 = rspec-w3c-matchers
 
 * http://github.com/hiroeorz/rspec-w3c-matchers/tree/master
+* mailto:hiroeorz@gmail.com
 
 == DESCRIPTION
 
