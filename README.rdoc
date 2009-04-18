@@ -1,6 +1,50 @@
 = rspec-w3c-matchers
 
-Description goes here.
+* http://github.com/hiroeorz/rspec-w3c-matchers/tree/master
+
+== DESCRIPTION
+
+RSpecW3CMatchers is rspec's custom spec, that check target is mached w3c valid (X)HTML.  
+
+== SYNOPSIS
+
+  require "rspec-w3c-matchers"
+
+  html_string.should be_valid_html
+  or
+  html_string.should be_xhtml_10_strict
+  and more...
+
+  Target is (x)html string or object, that defined "body" method.
+
+  sample:
+  require 'net/http'
+  require "rspec-w3c-matchers"
+  
+  Net::HTTP.version_1_2
+  Net::HTTP.start("www.example.com", 80) { |http|
+    response = http.get("/index.html")
+    response.should be_xhtml_10_transitional
+  }
+
+  If you use merb rspec:
+  require "rspec-w3c-matchers" # in spec/spec_helper.rb
+  
+  in spec/requests/sample_helper.rb:
+
+  describe "/sample/show" do
+    before(:each) do
+      @response = request("/sample/show")
+    end
+
+    it "should XHTML 1.0 Strict" do
+      @response.should be_xhtml_10_strict
+    end
+  end
+  
+== INSTALL
+
+  [sudo] gem install hiroeorz-rspec-w3c-matchers
 
 == Copyright
 
