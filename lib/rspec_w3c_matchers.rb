@@ -78,8 +78,72 @@ def be_xhtml_11
   BeW3CValidHtml.new(:xhtml11)
 end
 
+def be_html_401_strict
+  BeW3CValidHtml.new(:xhtml401_strict)
+end
+
+def be_html_401_transitional
+  BeW3CValidHtml.new(:xhtml401_transitional)
+end
+
+def be_html_401_frameset
+  BeW3CValidHtml.new(:xhtml401_frameset)
+end
+
+def be_html_32
+  BeW3CValidHtml.new(:html32)
+end
+
+def be_html_20
+  BeW3CValidHtml.new(:html20)
+end
+
+def be_iso_html
+  BeW3CValidHtml.new(:iso_html)
+end
+
 def be_xhtml_basic_10
   BeW3CValidHtml.new(:xhtml_basic10)
+end
+
+def be_xhtml_print_10
+  BeW3CValidHtml.new(:xhtml_print10)
+end
+
+def be_xhtml_11_plus_mathml_20
+  BeW3CValidHtml.new(:xhtml11_plus_mathml20)
+end
+
+def be_xhtml_11_plus_mathml_20_plus_svg_11
+  BeW3CValidHtml.new(:xhtml11_plus_mathml20_plus_svg11)
+end
+
+def be_mathml_20
+  BeW3CValidHtml.new(:mathml20)
+end
+
+def be_svg_10
+  BeW3CValidHtml.new(:svg10)
+end
+
+def be_svg_11
+  BeW3CValidHtml.new(:svg11)
+end
+
+def be_svg_11_tiny
+  BeW3CValidHtml.new(:svg11_tiny)
+end
+
+def be_svg_11_basic
+  BeW3CValidHtml.new(:svg11_basic)
+end
+
+def be_smil_10
+  BeW3CValidHtml.new(:smil10)
+end
+
+def be_smil_20
+  BeW3CValidHtml.new(:smil20)
 end
 
 # see http://code.dunae.ca/w3c_validators/doc
