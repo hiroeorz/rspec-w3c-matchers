@@ -21,9 +21,9 @@ or
   html_string.should be_xhtml_10_strict
 and more...
 
-*Target is (x)html string or object, that defined "body" method.
+===Target is (x)html string or object, that defined "body" method.
 
--sample:
+sample:
   require 'net/http'
   require "rspec_w3c_matchers"
   
@@ -33,12 +33,12 @@ and more...
     response.should be_xhtml_10_transitional
   }
 
-*If you use merb rspec:
+===If you use merb rspec:
 
-**in spec/spec_helper.rb
+in spec/spec_helper.rb
   require "rspec_w3c_matchers" 
   
-**in spec/requests/sample_helper.rb:
+in spec/requests/sample_helper.rb:
 
   describe "/sample/show" do
     before(:each) do
