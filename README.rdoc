@@ -1,17 +1,17 @@
-= rspec-w3c-matchers
+= rspec-w3c-matchers:
 
 * http://github.com/hiroeorz/rspec-w3c-matchers/tree/master
 * mailto:hiroeorz@gmail.com
 
 * rspec-w3c-matchers dependent to w3c_validator(see http://code.dunae.ca).
 
-== DESCRIPTION
+== DESCRIPTION:
 
 RSpecW3CMatchers is rspec's custom spec matcher, that checking target, that is mach w3c valid (X)HTML.
 
   
 
-== SYNOPSIS
+== SYNOPSIS:
 
   require "rspec_w3c_matchers"
 
@@ -20,7 +20,7 @@ or
   html_string.should be_xhtml_10_strict
 and more...
 
-===Target is (x)html string or object, that defined "body" method.
+===Target is (x)html string or object, that defined "body" method:
 
 sample:
   require 'net/http'
@@ -34,7 +34,7 @@ sample:
 
 ===If you use merb rspec:
 
-in spec/spec_helper.rb
+in spec/spec_helper.rb:
   require "rspec_w3c_matchers" 
   
 in spec/requests/sample_helper.rb:
@@ -49,10 +49,10 @@ in spec/requests/sample_helper.rb:
     end
   end
   
-== INSTALL
+== INSTALL:
 
   [sudo] gem install hiroeorz-rspec-w3c-matchers
 
-== Copyright
+== Copyright:
 
 Copyright (c) 2009 hiroeorz. See LICENSE for details.
