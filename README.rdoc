@@ -3,8 +3,7 @@
 * http://github.com/hiroeorz/rspec-w3c-matchers/tree/master
 * mailto:hiroeorz@gmail.com
 
-* rspec-w3c-matchers dependent to w3c_validator.
-see http://code.dunae.ca/
+* rspec-w3c-matchers dependent to w3c_validator(see http://code.dunae.ca).
 
 == DESCRIPTION
 
