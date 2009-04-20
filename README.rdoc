@@ -51,7 +51,7 @@ in spec/requests/sample_helper.rb:
   
 == INSTALL:
 
-  "gem source -a http://gems.github.com"
+  gem source -a http://gems.github.com
   [sudo] gem install hiroeorz-rspec-w3c-matchers
 
 == Copyright:
