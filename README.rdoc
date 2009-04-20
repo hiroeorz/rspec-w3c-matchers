@@ -3,22 +3,27 @@
 * http://github.com/hiroeorz/rspec-w3c-matchers/tree/master
 * mailto:hiroeorz@gmail.com
 
+* rspec-w3c-matchers dependent to w3c_validator.
+ see http://code.dunae.ca/
+
 == DESCRIPTION
 
-RSpecW3CMatchers is rspec's custom spec, that check target is mached w3c valid (X)HTML.  
+RSpecW3CMatchers is rspec's custom spec matcher, that checking target, that is mach w3c valid (X)HTML.
+
+  
 
 == SYNOPSIS
 
   require "rspec_w3c_matchers"
 
   html_string.should be_valid_html
-  or
+or
   html_string.should be_xhtml_10_strict
-  and more...
+and more...
 
-  Target is (x)html string or object, that defined "body" method.
+*Target is (x)html string or object, that defined "body" method.
 
-  sample:
+-sample:
   require 'net/http'
   require "rspec_w3c_matchers"
   
@@ -28,10 +33,12 @@ RSpecW3CMatchers is rspec's custom spec, that check target is mached w3c valid (
     response.should be_xhtml_10_transitional
   }
 
-  If you use merb rspec:
-  require "rspec_w3c_matchers" # in spec/spec_helper.rb
+*If you use merb rspec:
+
+**in spec/spec_helper.rb
+  require "rspec_w3c_matchers" 
   
-  in spec/requests/sample_helper.rb:
+**in spec/requests/sample_helper.rb:
 
   describe "/sample/show" do
     before(:each) do
