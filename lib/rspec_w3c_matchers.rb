@@ -8,10 +8,12 @@ require "w3c_validators"
 
 class BeW3CValidHtml
   include W3CValidators
+
+  @@charset = :utf8
   
   def initialize(format = nil)
     @html_validator = MarkupValidator.new
-    @html_validator.set_charset!(:utf_8)
+    @html_validator.set_charset!(@@charset)
     @html_validator.set_doctype!(format) if format
     @html_validator.set_debug!(true)
   end
@@ -56,6 +58,14 @@ class BeW3CValidHtml
   
   def failure_message_for_should_not
     "expected not be xhtml 1.0 strict, but was validated.\n"
+  end
+
+  def charset
+    @@charset
+  end
+
+  def charset=(value)
+    @@charset = value
   end
 end
 
