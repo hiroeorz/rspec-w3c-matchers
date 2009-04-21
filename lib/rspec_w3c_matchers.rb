@@ -3,6 +3,7 @@ begin
 rescue
 end
 
+require "stringio"
 require "w3c_validators"
 
 class BeW3CValidHtml
@@ -17,12 +18,12 @@ class BeW3CValidHtml
   
   def matches?(target)
     if defined?(target.body)
-      @target = target.body
+      @target = StringIO.new(target.body.to_s)
     else
-      @target = target.to_s      
+      @target = StringIO.new(target.to_s)      
     end
 
-    @result = @html_validator.validate_text(@target)
+    @result = @html_validator.validate_file(@target)
 
     print_warnings
 
