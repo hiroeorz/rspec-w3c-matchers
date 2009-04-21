@@ -60,11 +60,11 @@ class BeW3CValidHtml
     "expected not be xhtml 1.0 strict, but was validated.\n"
   end
 
-  def charset
+  def BeW3CValidHtml.charset
     @@charset
   end
 
-  def charset=(value)
+  def BeW3CValidHtml.charset=(value)
     @@charset = value
   end
 end

@@ -70,4 +70,12 @@ EOF
 
     LONG_XHTML_10_STRICT.should be_valid_html
   end
+
+  it "should settable character encoding" do
+    BeW3CValidHtml.charset = :utf8
+    BeW3CValidHtml.charset.should == :utf8
+
+    BeW3CValidHtml.charset = :sjis
+    BeW3CValidHtml.charset.should == :sjis
+  end
 end
