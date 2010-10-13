@@ -6,7 +6,7 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "rspec-w3c-matchers"
-    gem.summary = %Q{TODO}
+    gem.summary = %Q{todo is not exist}
     gem.email = "hiroe.orz@gmail.com"
     gem.homepage = "http://github.com/hiroeorz/rspec-w3c-matchers"
     gem.authors = ["hiroeorz"]

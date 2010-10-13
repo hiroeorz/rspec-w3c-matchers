@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{TODO}
+  s.summary = %q{todo is not exist}
   s.test_files = [
     "spec/spec_helper.rb",
      "spec/rspec_w3c_matchers_spec.rb"
