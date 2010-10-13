@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'spec_helper')
+require "spec_helper"
 
 describe "RspecW3cMatchers" do
   it "should failure XHTML 10 Strict" do
